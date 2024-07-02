@@ -8,22 +8,24 @@ const Footer = () => {
     return (
         <footer className='py-5 sm:px-10 px-5'>
             <div className='screen-max-width'>
-                <div>
-                    <p className="font-semibold text-gray text-xs">
-                        More ways to shop: {" "}
-                        <span className="underline text-blue">
-                            Find an Apple Store
-                        </span>
-                        {" "} or {" "}
-                        <span className="underline text-blue">
-                            other retailer
-                        </span>
-                        {" "} near you.
-                    </p>
+                <div className="flex md:flex-row flex-col md:items-center justify-between">
+                    <div>
+                        <p className="font-semibold text-gray text-xs">
+                            This is a clone of the Apple website made for educational and portfolio purposes.
+                        </p>
 
-                    <p className="font-semibold text-gray text-xs">
-                        Or call 9876543210 {" "}
-                    </p>
+                        <p className="font-semibold text-gray text-xs">
+                            All product images and names are owned by Apple Inc.
+                        </p>
+                    </div>
+                    <div className='text-end'>
+                        <p className="font-semibold text-gray text-xs">
+                            Developed by <span className='text-white'>Himanshu Bharti</span>.
+                        </p>
+                        <p className="font-semibold text-gray text-xs">
+                            Visit my <span className='text-blue underline'><a href="https://himanshubharti.netlify.app/" target='_blank'>portfolio</a></span> for more projects.
+                        </p>
+                    </div>
                 </div>
 
                 <div className='bg-neutral-700 my-5 h-[1px] w-full' />
