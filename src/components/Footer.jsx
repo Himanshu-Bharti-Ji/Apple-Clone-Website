@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className='py-5 sm:px-10 px-5'>
             <div className='screen-max-width'>
                 <div className="flex md:flex-row flex-col md:items-center justify-between">
-                    <div>
+                    <div className='text-start  mb-2 lg:mb-0 md:mb-0'>
                         <p className="font-semibold text-gray text-xs">
                             This is a clone of the Apple website made for educational and portfolio purposes.
                         </p>
@@ -18,7 +18,7 @@ const Footer = () => {
                             All product images and names are owned by Apple Inc.
                         </p>
                     </div>
-                    <div className='text-end'>
+                    <div className='text-start lg:text-end md:text-end'>
                         <p className="font-semibold text-gray text-xs">
                             Developed by <span className='text-white'>Himanshu Bharti</span>.
                         </p>
@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className='bg-neutral-700 my-5 h-[1px] w-full' />
 
                 <div className="flex md:flex-row flex-col md:items-center justify-between">
-                    <p className="font-semibold text-gray text-xs">
+                    <p className="font-semibold text-gray text-xs mb-1 lg:mb-0 md:mb-0">
                         Copyright © {currentYear} Apple Inc. All rights reserved.
                     </p>
 
@@ -40,7 +40,7 @@ const Footer = () => {
                             <p key={link} className='font-semibold text-gray text-xs cursor-pointer'>
                                 {link} {" "}
                                 {i !== footerLinks.length - 1 && (
-                                    <span className='mx-2'> | </span>
+                                    <span className='mx-2'> {" "} </span>
                                 )}
                             </p>
                         ))}
